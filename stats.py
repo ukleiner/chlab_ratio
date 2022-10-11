@@ -1,3 +1,5 @@
+import numpy as np
+
 def rmspe(y_true, rmse):
     return 100*rmse/(y_true.max()-y_true.min())
 
@@ -46,3 +48,6 @@ def VIP(plsr):
                        for i in range(w1)])
     vip = np.sqrt(w0 * np.sum(s * w_norm.T ** 2, axis=1) / s_sum)
     return vip
+
+if __name__ == "__main__":
+    print(np.__version__)

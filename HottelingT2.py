@@ -1,3 +1,6 @@
+import numpy as np
+from scipy.stats import f
+
 # Whole section based on T. Mehmood (2016) paper
 # R impl: https://rdrr.io/github/khliland/plsVarSel/src/R/T2.R
 def upperlimit(weights, alpha=0.0025):
